@@ -1,15 +1,15 @@
 <?php
 
-namespace Dolly;
+namespace Matryoshka;
 
 class BladeDirective
 {
     protected $keys = [];
     protected $cache;
 
-    public function __construct(RussianCaching $cach)
+    public function __construct(RussianCaching $cache)
     {
-        $this->cache = $cach;
+        $this->cache = $cache;
 
     }
 

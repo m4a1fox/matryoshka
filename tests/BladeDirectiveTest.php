@@ -27,8 +27,8 @@ class BladeDirectiveTest extends TestCase
             new \Illuminate\Cache\ArrayStore()
         );
 
-        $this->doll = new \Dolly\RussianCaching($cache);
+        $this->doll = new \Matryoshka\RussianCaching($cache);
 
-        return new \Dolly\BladeDirective($this->doll);
+        return new \Matryoshka\BladeDirective($this->doll);
     }
 }

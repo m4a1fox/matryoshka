@@ -1,11 +1,11 @@
 <?php
 
-namespace Dolly;
+namespace Matryoshka;
 
 use Illuminate\Support\Facades\Blade;
 use Illuminate\Support\ServiceProvider;
 
-class DollyServiceProvider extends ServiceProvider
+class MatryoshkaServiceProvider extends ServiceProvider
 {
     /**
      * Bootstrap any application services.
@@ -15,11 +15,11 @@ class DollyServiceProvider extends ServiceProvider
     public function boot()
     {
         Blade::directive('cache', function ($expression) {
-            return "<?php if (! app('Dolly\BladeDirective')->setUp({$expression})) { ?>";
+            return "<?php if (! app('Matryoshka\BladeDirective')->setUp({$expression})) { ?>";
         });
 
         Blade::directive('endcache', function () {
-            return "<?php } echo app('Dolly\BladeDirective')->tearDown() ?>";
+            return "<?php } echo app('Matryoshka\BladeDirective')->tearDown() ?>";
         });
     }
 
@@ -31,7 +31,9 @@ class DollyServiceProvider extends ServiceProvider
     public function register()
     {
         $this->app->singleton(BladeDirective::class, function () {
-            return new BladeDirective();
+            return new BladeDirective(
+                new RussianCaching(app('cache.store'))
+            );
         });
     }
 }

@@ -1,6 +1,6 @@
 <?php
 
-namespace Dolly;
+namespace Matryoshka;
 
 trait Cacheable
 {

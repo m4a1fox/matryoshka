@@ -1,6 +1,6 @@
 <?php
 
-use Dolly\RussianCaching;
+use Matryoshka\RussianCaching;
 
 class RussianCachingTest extends TestCase
 {

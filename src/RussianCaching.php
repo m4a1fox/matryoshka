@@ -1,6 +1,6 @@
 <?php
 
-namespace Dolly;
+namespace Matryoshka;
 
 use Illuminate\Contracts\Cache\Repository as Cache;
 

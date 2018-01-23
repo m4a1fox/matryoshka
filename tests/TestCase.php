@@ -41,5 +41,5 @@ abstract class TestCase extends PHPUnit\Framework\TestCase
 
 class Post extends \Illuminate\Database\Eloquent\Model
 {
-    use Dolly\Cacheable;
+    use Matryoshka\Cacheable;
 }
