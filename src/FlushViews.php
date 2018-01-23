@@ -2,7 +2,6 @@
 
 namespace Dolly;
 
-
 use Illuminate\Support\Facades\Cache;
 
 class FlushViews

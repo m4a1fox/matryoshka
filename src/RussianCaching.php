@@ -2,30 +2,35 @@
 
 namespace Dolly;
 
-
-use Illuminate\Support\Facades\Cache;
+use Illuminate\Contracts\Cache\Repository as Cache;
 
 class RussianCaching
 {
-    protected static $keys = [];
+    protected $cache;
 
-    public static function setUp($model)
+    public function __construct(Cache $cache)
     {
-        static::$keys[] = $key = $model->getCacheKey();
-
-        ob_start();
-
-        return Cache::tags('view')->has($key);
+        $this->cache = $cache;
     }
 
-    public static function tearDown()
+    public function put($key, $fragmetn)
     {
-        $key = array_pop(static::$keys);
+        return $this->cache
+            ->tags('view')
+            ->rememberForever($this->normalizeCacheKey($key), function () use ($fragmetn) {
+                return $fragmetn;
+            });
+    }
 
-        $html = ob_get_clean();
+    public function has($key)
+    {
+        return $this->cache
+            ->tags('view')
+            ->has($this->normalizeCacheKey($key));
+    }
 
-        return Cache::tags('view')->rememberForever($key, function() use ($html) {
-            return $html;
-        });
+    private function normalizeCacheKey($key)
+    {
+        return $key instanceof \Illuminate\Database\Eloquent\Model ? $key->getCacheKey() : $key;
     }
 }
