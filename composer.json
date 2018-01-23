@@ -1,0 +1,21 @@
+{
+  "name": "maxim/dolly",
+  "description": "Russian doll caching for Laravel",
+  "license": "MIT",
+  "keywords": ["laravel", "cache"],
+  "authors": [
+    {
+      "name": "m4a1fox",
+      "email": "bogdanovmaxim87@gmail.com"
+    }
+  ],
+  "minimum-stability": "dev",
+  "require": {
+    "illuminate/support": "^5.5"
+  },
+  "autoload": {
+    "psr-4": {
+      "Dolly\\": "src/"
+    }
+  }
+}
