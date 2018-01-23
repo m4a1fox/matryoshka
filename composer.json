@@ -1,5 +1,5 @@
 {
-  "name": "maxim/matryoshka",
+  "name": "m4a1fox/matryoshka",
   "description": "Russian doll caching for Laravel",
   "license": "MIT",
   "keywords": ["laravel", "cache"],
