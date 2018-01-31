@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "8914da00c94f19753e5c66b0dc783209",
-    "content-hash": "0e142acef1452386492c3a34d5f7d660",
+    "hash": "8395b14f9ff64a0e881317022f57c63e",
+    "content-hash": "37c90c1ae5b6591dcb3298e1079aab27",
     "packages": [
         {
             "name": "doctrine/inflector",
@@ -331,12 +331,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/polyfill-mbstring.git",
-                "reference": "750a2b259dd68436e3b918a4241e80b023a80663"
+                "reference": "78be803ce01e55d3491c1397cf1c64beb9c1b63b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/polyfill-mbstring/zipball/750a2b259dd68436e3b918a4241e80b023a80663",
-                "reference": "750a2b259dd68436e3b918a4241e80b023a80663",
+                "url": "https://api.github.com/repos/symfony/polyfill-mbstring/zipball/78be803ce01e55d3491c1397cf1c64beb9c1b63b",
+                "reference": "78be803ce01e55d3491c1397cf1c64beb9c1b63b",
                 "shasum": ""
             },
             "require": {
@@ -348,7 +348,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "1.6-dev"
+                    "dev-master": "1.7-dev"
                 }
             },
             "autoload": {
@@ -382,7 +382,7 @@
                 "portable",
                 "shim"
             ],
-            "time": "2017-12-17 16:08:10"
+            "time": "2018-01-30 19:27:44"
         },
         {
             "name": "symfony/translation",
@@ -460,21 +460,22 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/doctrine/instantiator.git",
-                "reference": "8520afa0d55f9b3aba1070a9bf65d4b0d9fb7727"
+                "reference": "dcbbb92ee8534a4244559f3b0e5702dd30b43f47"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/doctrine/instantiator/zipball/8520afa0d55f9b3aba1070a9bf65d4b0d9fb7727",
-                "reference": "8520afa0d55f9b3aba1070a9bf65d4b0d9fb7727",
+                "url": "https://api.github.com/repos/doctrine/instantiator/zipball/dcbbb92ee8534a4244559f3b0e5702dd30b43f47",
+                "reference": "dcbbb92ee8534a4244559f3b0e5702dd30b43f47",
                 "shasum": ""
             },
             "require": {
                 "php": "^7.1"
             },
             "require-dev": {
+                "doctrine/coding-standard": "~2.1.0",
                 "ext-pdo": "*",
                 "ext-phar": "*",
-                "phpunit/phpunit": "^6.2.3"
+                "phpunit/phpunit": "^6.5.5"
             },
             "type": "library",
             "extra": {
@@ -504,7 +505,7 @@
                 "constructor",
                 "instantiate"
             ],
-            "time": "2017-12-22 05:44:00"
+            "time": "2018-01-29 06:31:30"
         },
         {
             "name": "illuminate/cache",
@@ -512,12 +513,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/illuminate/cache.git",
-                "reference": "d15bfe9790b6c5385d03efd06dc3c1860178d2e4"
+                "reference": "25aac4adeef7555c2ac317b37215fd88804f4873"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/illuminate/cache/zipball/d15bfe9790b6c5385d03efd06dc3c1860178d2e4",
-                "reference": "d15bfe9790b6c5385d03efd06dc3c1860178d2e4",
+                "url": "https://api.github.com/repos/illuminate/cache/zipball/25aac4adeef7555c2ac317b37215fd88804f4873",
+                "reference": "25aac4adeef7555c2ac317b37215fd88804f4873",
                 "shasum": ""
             },
             "require": {
@@ -553,7 +554,7 @@
             ],
             "description": "The Illuminate Cache package.",
             "homepage": "https://laravel.com",
-            "time": "2018-01-04 20:39:14"
+            "time": "2018-01-27 10:17:16"
         },
         {
             "name": "illuminate/container",
@@ -605,12 +606,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/illuminate/database.git",
-                "reference": "1aa55fe374f45d745acd30e02b90b161b087fbec"
+                "reference": "888ea6986066d3c182722aa1a76e216b05ea846c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/illuminate/database/zipball/1aa55fe374f45d745acd30e02b90b161b087fbec",
-                "reference": "1aa55fe374f45d745acd30e02b90b161b087fbec",
+                "url": "https://api.github.com/repos/illuminate/database/zipball/888ea6986066d3c182722aa1a76e216b05ea846c",
+                "reference": "888ea6986066d3c182722aa1a76e216b05ea846c",
                 "shasum": ""
             },
             "require": {
@@ -656,7 +657,7 @@
                 "orm",
                 "sql"
             ],
-            "time": "2018-01-21 02:13:58"
+            "time": "2018-01-27 10:17:16"
         },
         {
             "name": "myclabs/deep-copy",
@@ -870,12 +871,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/phpDocumentor/ReflectionDocBlock.git",
-                "reference": "86868b92020037a58b124ebb428d3ac1e064e503"
+                "reference": "25ec30d9363f15a4b0128048c4558e8787a1404a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/phpDocumentor/ReflectionDocBlock/zipball/86868b92020037a58b124ebb428d3ac1e064e503",
-                "reference": "86868b92020037a58b124ebb428d3ac1e064e503",
+                "url": "https://api.github.com/repos/phpDocumentor/ReflectionDocBlock/zipball/25ec30d9363f15a4b0128048c4558e8787a1404a",
+                "reference": "25ec30d9363f15a4b0128048c4558e8787a1404a",
                 "shasum": ""
             },
             "require": {
@@ -912,20 +913,20 @@
                 }
             ],
             "description": "With this component, a library can provide support for annotations via DocBlocks or otherwise retrieve information that is embedded in a DocBlock.",
-            "time": "2018-01-12 19:30:38"
+            "time": "2018-01-29 20:02:07"
         },
         {
             "name": "phpdocumentor/type-resolver",
-            "version": "0.5.0",
+            "version": "0.5.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/phpDocumentor/TypeResolver.git",
-                "reference": "7159da1ff4ab5de0c033bab91c9d3f52dd9a7a02"
+                "reference": "cf842904952e64e703800d094cdf34e715a8a3ae"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/phpDocumentor/TypeResolver/zipball/7159da1ff4ab5de0c033bab91c9d3f52dd9a7a02",
-                "reference": "7159da1ff4ab5de0c033bab91c9d3f52dd9a7a02",
+                "url": "https://api.github.com/repos/phpDocumentor/TypeResolver/zipball/cf842904952e64e703800d094cdf34e715a8a3ae",
+                "reference": "cf842904952e64e703800d094cdf34e715a8a3ae",
                 "shasum": ""
             },
             "require": {
@@ -957,7 +958,7 @@
                     "email": "me@mikevanriel.com"
                 }
             ],
-            "time": "2017-11-15 21:30:06"
+            "time": "2017-12-30 13:23:38"
         },
         {
             "name": "phpspec/prophecy",
@@ -1277,12 +1278,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/sebastianbergmann/phpunit.git",
-                "reference": "9f10a4cedf118b9196325cab3033f5c060c4d35b"
+                "reference": "c05279e235bcc1ad10f5a4c0d24cbc4fbdd71235"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sebastianbergmann/phpunit/zipball/9f10a4cedf118b9196325cab3033f5c060c4d35b",
-                "reference": "9f10a4cedf118b9196325cab3033f5c060c4d35b",
+                "url": "https://api.github.com/repos/sebastianbergmann/phpunit/zipball/c05279e235bcc1ad10f5a4c0d24cbc4fbdd71235",
+                "reference": "c05279e235bcc1ad10f5a4c0d24cbc4fbdd71235",
                 "shasum": ""
             },
             "require": {
@@ -1353,7 +1354,7 @@
                 "testing",
                 "xunit"
             ],
-            "time": "2018-01-14 15:48:34"
+            "time": "2018-01-29 15:29:51"
         },
         {
             "name": "phpunit/phpunit-mock-objects",
@@ -1465,17 +1466,17 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/sebastianbergmann/comparator.git",
-                "reference": "c2019a4d1d15b86fc3da1139c99f6ed16a1fe517"
+                "reference": "35df5e7539f65399b38ff3fcd323d53e08d8dfcd"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sebastianbergmann/comparator/zipball/c2019a4d1d15b86fc3da1139c99f6ed16a1fe517",
-                "reference": "c2019a4d1d15b86fc3da1139c99f6ed16a1fe517",
+                "url": "https://api.github.com/repos/sebastianbergmann/comparator/zipball/35df5e7539f65399b38ff3fcd323d53e08d8dfcd",
+                "reference": "35df5e7539f65399b38ff3fcd323d53e08d8dfcd",
                 "shasum": ""
             },
             "require": {
                 "php": "^7.0",
-                "sebastian/diff": "^2.0",
+                "sebastian/diff": "^2.0 || ^3.0",
                 "sebastian/exporter": "^3.1"
             },
             "require-dev": {
@@ -1521,7 +1522,7 @@
                 "compare",
                 "equality"
             ],
-            "time": "2018-01-12 08:56:06"
+            "time": "2018-01-29 13:45:34"
         },
         {
             "name": "sebastian/diff",
@@ -1529,24 +1530,25 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/sebastianbergmann/diff.git",
-                "reference": "0fd4d14dd707808a95ca67ada62c15f9a9186b15"
+                "reference": "d7f716f34f61a10051516e5a3730c2eb6f492139"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sebastianbergmann/diff/zipball/0fd4d14dd707808a95ca67ada62c15f9a9186b15",
-                "reference": "0fd4d14dd707808a95ca67ada62c15f9a9186b15",
+                "url": "https://api.github.com/repos/sebastianbergmann/diff/zipball/d7f716f34f61a10051516e5a3730c2eb6f492139",
+                "reference": "d7f716f34f61a10051516e5a3730c2eb6f492139",
                 "shasum": ""
             },
             "require": {
-                "php": "^7.0"
+                "php": "^7.1"
             },
             "require-dev": {
-                "phpunit/phpunit": "^6.2"
+                "phpunit/phpunit": "^7.0",
+                "symfony/process": "^2 || ^3.3 || ^4"
             },
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "2.1-dev"
+                    "dev-master": "3.0-dev"
                 }
             },
             "autoload": {
@@ -1571,9 +1573,12 @@
             "description": "Diff implementation",
             "homepage": "https://github.com/sebastianbergmann/diff",
             "keywords": [
-                "diff"
+                "diff",
+                "udiff",
+                "unidiff",
+                "unified diff"
             ],
-            "time": "2017-12-14 13:13:00"
+            "time": "2018-01-29 17:23:31"
         },
         {
             "name": "sebastian/environment",
@@ -2019,12 +2024,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/webmozart/assert.git",
-                "reference": "4a8bf11547e139e77b651365113fc12850c43d9a"
+                "reference": "0df1908962e7a3071564e857d86874dad1ef204a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/webmozart/assert/zipball/4a8bf11547e139e77b651365113fc12850c43d9a",
-                "reference": "4a8bf11547e139e77b651365113fc12850c43d9a",
+                "url": "https://api.github.com/repos/webmozart/assert/zipball/0df1908962e7a3071564e857d86874dad1ef204a",
+                "reference": "0df1908962e7a3071564e857d86874dad1ef204a",
                 "shasum": ""
             },
             "require": {
@@ -2061,7 +2066,7 @@
                 "check",
                 "validate"
             ],
-            "time": "2016-11-23 20:04:41"
+            "time": "2018-01-29 19:49:41"
         }
     ],
     "aliases": [],
