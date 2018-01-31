@@ -13,12 +13,12 @@ class RussianCaching
         $this->cache = $cache;
     }
 
-    public function put($key, $fragmetn)
+    public function put($key, $fragment)
     {
         return $this->cache
             ->tags('view')
-            ->rememberForever($this->normalizeCacheKey($key), function () use ($fragmetn) {
-                return $fragmetn;
+            ->rememberForever($this->normalizeCacheKey($key), function () use ($fragment) {
+                return $fragment;
             });
     }
 
