@@ -4,16 +4,21 @@ namespace Matryoshka;
 
 use Illuminate\Support\Facades\Blade;
 use Illuminate\Support\ServiceProvider;
+use Illuminate\Contracts\Http\Kernel;
 
 class MatryoshkaServiceProvider extends ServiceProvider
 {
     /**
      * Bootstrap any application services.
      *
-     * @return void
+     * @param Kernel $kernel
      */
-    public function boot()
+    public function boot(Kernel $kernel)
     {
+        if ($this->app->environment() === 'local') {
+            $kernel->pushMiddleware('Matryoshka\FlushViews');
+        }
+
         Blade::directive('cache', function ($expression) {
             return "<?php if (! app('Matryoshka\BladeDirective')->setUp({$expression})) { ?>";
         });
@@ -30,10 +35,6 @@ class MatryoshkaServiceProvider extends ServiceProvider
      */
     public function register()
     {
-        $this->app->singleton(BladeDirective::class, function () {
-            return new BladeDirective(
-                new RussianCaching(app('cache.store'))
-            );
-        });
+        $this->app->singleton(BladeDirective::class);
     }
 }
